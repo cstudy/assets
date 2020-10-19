@@ -8,7 +8,7 @@ sections:
   path: ss
   label: ss
 upload_dir: images
-public_path: https://cdn.jsdelivr.net/gh/cstudy/assets@develop
+public_path: https://cdn.jsdelivr.net/gh/cstudy/assets@develop/images
 front_matter_path: ''
 use_front_matter_path: false
 file_template: ":year::month::day:/:filename:"
