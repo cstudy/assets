@@ -8,7 +8,7 @@ sections:
   path: ss
   label: ss
 upload_dir: images
-public_path: ''
+public_path: ffffffff
 front_matter_path: ''
 use_front_matter_path: false
 file_template: ":year::month::day:/:filename:"
