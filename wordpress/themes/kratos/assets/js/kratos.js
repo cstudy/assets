@@ -1,7 +1,3 @@
-/*!
- * Kratos
- * Seaton Jiang <seatonjiang@vtrois.com>
- */
 (function () {
     "use strict";
 
