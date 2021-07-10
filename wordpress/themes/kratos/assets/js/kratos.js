@@ -18,18 +18,15 @@
     var gotopConfig = function () {
         $(window).on("load", function () {
             var $win = $(window);
-            if ($win.scrollTop() > 200) {
-                $(".gotop").addClass("active");
-            } else {
-                $(".gotop").removeClass("active");
-            }
-            $win.scroll(function () {
-                if ($win.scrollTop() > 200) {
+            var checkScrollTop=function(){
+                if ($win.scrollTop() > 100) {
                     $(".gotop").addClass("active");
                 } else {
                     $(".gotop").removeClass("active");
-                }
-            });
+                }                
+            }
+
+            $win.scroll(checkScrollTop);
         });
         $(".gotop").on("click", function (event) {
             event.preventDefault();
