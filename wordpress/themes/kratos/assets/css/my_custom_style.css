@@ -1,3 +1,6 @@
+.k-main .board .article-panel .a-meta span:nth-child(2){
+    display:none;
+}
 .a-meta .d-block {
     display: none !important;
 }
