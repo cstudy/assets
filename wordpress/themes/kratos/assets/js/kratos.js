@@ -16,18 +16,18 @@
     };
 
     var gotopConfig = function () {
-        $(window).on("load", function () {
-            var $win = $(window);
-            var checkScrollTop=function(){
-                if ($win.scrollTop() > 100) {
-                    $(".gotop").addClass("active");
-                } else {
-                    $(".gotop").removeClass("active");
-                }                
-            }
-
-            $win.scroll(checkScrollTop);
-        });
+        var $win = $(window);
+        var checkScrollTop=function(){
+            if ($win.scrollTop() > 100) {
+                $(".gotop").addClass("active");
+            } else {
+                $(".gotop").removeClass("active");
+            }                
+        }
+        checkScrollTop();
+        $win.scroll(checkScrollTop);
+        
+        
         $(".gotop").on("click", function (event) {
             event.preventDefault();
             $("html, body").animate(
