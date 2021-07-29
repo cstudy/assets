@@ -617,11 +617,13 @@ h1.post-title::before,
 .post-content h5::before,
 .post-content h6::before {
     display: inline-block;
-    padding-right: 0.4em;
+    padding-right: 2em;
     opacity: 0.4;
+    font-size: 0.2em;
 }
 h1.post-title::before {
     content: "H1";
+    color: #3354aa;
 }
 .post-content h2::before {
     content: "H2";
