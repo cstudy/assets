@@ -559,15 +559,23 @@ img.alignright {
 
 /* 目录 */
 .sticky {
-    position: -webkit-sticky;
-    position: sticky;
-    top: 0;
+    /*position: -webkit-sticky;*/
+    /*position: sticky;*/
+    /*top: 0;*/
+    position: fixed;
+    background: #fff;
     font-size: 0.92857em;
 }
+/* 目录内容 */
 .sticky .widget-list {
     overflow-y: auto;
-    max-height: 400px;
+    max-height: 300px;
+    display: none;
 }
+.sticky .widget-list.active{
+    display: block;
+}
+
 /*滚动条整体部分*/
 .sticky .widget-list::-webkit-scrollbar {
   width: 6px;
