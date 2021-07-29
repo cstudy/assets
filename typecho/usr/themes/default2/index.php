@@ -2,7 +2,7 @@
 /**
  * Default theme for Typecho
  * 
- * @package Typecho Replica Theme 
+ * @package Typecho Replica Theme 2
  * @author Typecho Team
  * @version 1.2
  * @link http://typecho.org
