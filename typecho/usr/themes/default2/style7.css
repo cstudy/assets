@@ -559,53 +559,50 @@ img.alignright {
 
 /* 目录 */
 .sticky {
-    /*position: -webkit-sticky;*/
-    /*position: sticky;*/
-    /*top: 0;*/
     position: fixed;
     background: #fff;
     font-size: 0.92857em;
+    border: 1px solid #cecece;
+    width: 15%;
+    top: 82px;
+    user-select: none;
+    margin-left: -15px;
+    padding: 0 15px;
+}
+.sticky > .widget-title {
+    cursor: pointer;
 }
 /* 目录内容 */
-.sticky .widget-list {
+.sticky > .widget-list {
     overflow-y: auto;
     max-height: 300px;
+    margin: 0 -15px 0 0;
+    padding-right: 15px;
     display: none;
 }
-.sticky .widget-list.active{
+.sticky > .widget-list.active {
     display: block;
 }
-
 /*滚动条整体部分*/
 .sticky .widget-list::-webkit-scrollbar {
-  width: 6px;
-  height: 6px;
+    width: 6px;
+    height: 6px;
 }
 /*正常情况下滑块的样式*/
 .sticky .widget-list::-webkit-scrollbar-thumb {
-  background-color: #CECECE;
-  border-radius: 3px;
+    background-color: #cecece;
+    border-radius: 3px;
 }
 /*鼠标悬浮在该类指向的控件上时滑块的样式*/
 .sticky .widget-list:hover::-webkit-scrollbar-thumb {
-  background-color: #BFBFBF;
+    background-color: #bfbfbf;
 }
 /*鼠标悬浮在滑块上时滑块的样式*/
 .sticky .widget-list::-webkit-scrollbar-thumb:hover {
-  background-color: #BFBFBF;
+    background-color: #bfbfbf;
 }
 /*正常时候的主干部分*/
 .sticky .widget-list::-webkit-scrollbar-track {
-  border-radius: 3px;
-  background-color: #F5F5F5;
+    border-radius: 3px;
+    background-color: #f5f5f5;
 }
-
-
-
-
-
-
-
-
-
-
