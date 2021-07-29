@@ -556,3 +556,15 @@ img.alignright {
     border-right: none;
     border-bottom: none;
 }
+
+/* 目录 */
+.sticky {
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    font-size: 0.92857em;
+}
+.sticky .widget-list {
+    overflow-y: auto;
+    max-height: 400px;
+}
