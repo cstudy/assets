@@ -1,7 +1,5 @@
 (function(){
-    var hasSetTopTop=false;
     function setTopTop(event){
-        hasSetTopTop=true;
         var a = document.getElementsByClassName("back-to-top")[0];
         function setBackToTop() {
             if (window.scrollY > 100) {
@@ -21,10 +19,7 @@
             });
         };    
     }
-    window.addEventListener("DOMContentLoaded", setTopTop);
     setTimeout(function() {
-        if(!hasSetTopTop){
-            setTopTop();
-        }
+        setTopTop();
     }, 100);    
 })();
