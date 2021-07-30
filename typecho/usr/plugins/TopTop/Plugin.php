@@ -96,7 +96,8 @@ class TopTop_Plugin implements Typecho_Plugin_Interface
         // $options = Helper::options()->plugin('TopTop');
         echo '<div class="back-to-top" style="bottom: 30px;"></div>';
         // echo '<script type="text/javascript" src="' . $path . 'js/toptop.js?v=2021072904"></script>';
-        echo '<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/cstudy/assets@develop/typecho/usr/plugins/TopTop/js/toptop.js?v=1"></script>';
+        echo '<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/cstudy/assets@develop/typecho/usr/plugins/TopTop/js/toptop3.js?v=2"></script>';
+        
     }
 }
 
