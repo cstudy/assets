@@ -19,7 +19,7 @@
     <!-- <link rel="stylesheet" href="<?php $this->options->themeUrl('style.css'); ?>"> -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/cstudy/assets@develop/typecho/usr/themes/default2/normalize.min.css?v=1">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/cstudy/assets@develop/typecho/usr/themes/default2/grid.min.css?v=1">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/cstudy/assets@develop/typecho/usr/themes/default2/style.min.css?v=1">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/cstudy/assets@develop/typecho/usr/themes/default2/style14.min.css?v=2">
 
     <!--[if lt IE 9]>
     <script src="https://cdn.jsdelivr.net/npm/html5shiv@3.7.3/dist/html5shiv.min.js"></script>
