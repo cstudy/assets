@@ -623,7 +623,6 @@ img.alignright {
 }
 
 /* --------------------------------标题前缀 */
-h1.post-title::before,
 .post-content h2::before,
 .post-content h3::before,
 .post-content h4::before,
@@ -634,24 +633,43 @@ h1.post-title::before,
     opacity: 0.4;
     font-size: 0.2em;
 }
-h1.post-title::before {
-    content: "H1";
-    color: #3354aa;
-}
+/* insert number before h2 element */
 .post-content h2::before {
-    content: "H2";
+    content: counter(h2Counter) ". ";
+}
+/* increase h2 counter and reset h3 counter when meet a h2 element */
+.post-content h2 {
+    counter-increment: h2Counter;
+    counter-reset: h3Counter;
 }
 .post-content h3::before {
-    content: "H3";
+    content: counter(h2Counter) "." counter(h3Counter) " ";
+}
+.post-content h3 {
+    counter-increment: h3Counter;
+    counter-reset: h4Counter;
 }
 .post-content h4::before {
-    content: "H4";
+    content: counter(h2Counter) "." counter(h3Counter) "." counter(h4Counter) " ";
+}
+.post-content h4 {
+    counter-increment: h4Counter;
+    counter-reset: h5Counter;
 }
 .post-content h5::before {
-    content: "H5";
+    content: counter(h2Counter) "." counter(h3Counter) "." counter(h4Counter) "." counter(h5Counter)
+        " ";
+}
+.post-content h5 {
+    counter-increment: h5Counter;
+    counter-reset: h6Counter;
 }
 .post-content h6::before {
-    content: "H6";
+    content: counter(h2Counter) "." counter(h3Counter) "." counter(h4Counter) "." counter(h5Counter)
+        "." counter(h6Counter) " ";
+}
+.post-content h6 {
+    counter-increment: h6Counter;
 }
 
 @media (max-width: 991px) {
