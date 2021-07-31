@@ -35,6 +35,7 @@ $(document).ready(function () {
             var toc = $(".sticky>.widget-list");
             if (localStorage.getItem("LijqBlogToc")) {
                 toc.addClass("active");
+                setTocHighlight();
             }
             $(".sticky>.widget-title").on("click", function () {
                 if (toc.hasClass("active")) {
@@ -42,11 +43,11 @@ $(document).ready(function () {
                     localStorage.setItem("LijqBlogToc", "");
                 } else {
                     toc.addClass("active");
+                    setTocHighlight();
                     localStorage.setItem("LijqBlogToc", "1");
                 }
             });
         }
-        setTocShow();
 
         function setTocHighlight() {
             var Top = $(window).scrollTop();
@@ -63,7 +64,8 @@ $(document).ready(function () {
                 }
             });
         }
-        setTocHighlight();
+
+        setTocShow();
 
         rightTocLinks.click(function (e) {
             e.preventDefault();
