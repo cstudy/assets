@@ -59,8 +59,9 @@ $(document).ready(function () {
                     curLi = rightTocLinks.eq(i).parent();
 
                     curLi.addClass("active");
-                    parent = curLi.hasClass("level1") ? curLi : curLi.parents(".level1");
-                    parent.get(0).scrollIntoView();
+                    // parent = curLi.hasClass("level1") ? curLi : curLi.parents(".level1");
+                    // parent.get(0).scrollIntoView();
+                    curLi.get(0).scrollIntoView();
                 }
             });
         }
