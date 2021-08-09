@@ -1932,3 +1932,8 @@ img#wpstats {
     border-right: none;
     border-bottom: none;
 }
+
+/* 首页发表评论按钮 */
+.entry-header .comments-link {
+    display: none;
+}
