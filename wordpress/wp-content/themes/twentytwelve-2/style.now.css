@@ -1937,3 +1937,9 @@ img#wpstats {
 .entry-header .comments-link {
     display: none;
 }
+
+/* 评论订阅 */
+.comment-subscription-form input {
+    margin-left: 0;
+    margin-right: 10 px;
+}
