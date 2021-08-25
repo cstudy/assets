@@ -1906,6 +1906,7 @@ img#wpstats {
     }
 }
 
+/* ----------------------------------------------- */
 /* 首页发表评论按钮 */
 .entry-header .comments-link {
     display: none;
@@ -1915,4 +1916,9 @@ img#wpstats {
 .comment-subscription-form input {
     margin-left: 0;
     margin-right: 10px;
+}
+
+/* sidebar */
+.widget-area .widget a {
+    text-decoration: none;
 }
