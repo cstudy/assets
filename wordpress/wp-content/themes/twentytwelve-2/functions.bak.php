@@ -710,26 +710,6 @@ function twentytwelve_widget_tag_cloud_args( $args ) {
 add_filter( 'widget_tag_cloud_args', 'twentytwelve_widget_tag_cloud_args' );
 
 
-
-
-// 彩色标签
-function colorCloud($text) {
-    $text = preg_replace_callback('|<a (.+?)>|i', 'colorCloudCallback', $text);
-    return $text;
-}
-function colorCloudCallback($matches) {
-    $text = $matches[1];
-    $colors=array('ff3300','0517c2','0fc317','e7cc17','601165','ffb900','f74e1e','00a4ef','7fba00');
-    $color=$colors[dechex(rand(0,3))];
-    $pattern = '/style=(\'|\")(.*)(\'|\")/i';
-    $text = preg_replace($pattern, "style=\"color:#{$color};$2;\"", $text);
-    return "<a $text>";
-}
-add_filter('wp_tag_cloud', 'colorCloud', 1);
-
-
-
-
 if ( ! function_exists( 'wp_body_open' ) ) :
 	/**
 	 * Fire the wp_body_open action.
