@@ -1906,7 +1906,7 @@ img#wpstats {
     }
 }
 
-/* ----------------------------------------------- */
+/* ---------------------------------------------------------------------------------------------- */
 /* 首页发表评论按钮 */
 .entry-header .comments-link {
     display: none;
@@ -1921,4 +1921,20 @@ img#wpstats {
 /* sidebar */
 .widget-area .widget a {
     text-decoration: none;
+}
+
+/* 全屏宽度 */
+@media screen and (min-width: 960px) {
+    body .site {
+        margin-top: 0 !important;
+        margin-bottom: 0 !important;
+    }
+}
+@media screen and (min-width: 600px) {
+    .site {
+        max-width: none !important;
+    }
+}
+footer[role="contentinfo"] {
+    max-width: none !important;
 }
